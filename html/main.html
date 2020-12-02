@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pasek {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 60px;
+            width: 100%;
+            background-color: #333399;
+            display: block;
+        }
+
+        #main,
+        #register,
+        #login,
+        #admin {
+            width: 300px;
+            color: white;
+            display: inline;
+            justify-content: center;
+            font-size: 30px;
+            margin-top: 30px;
+            font: 30px;
+            padding: 10px 10px 10px 10px;
+            top: -15px;
+        }
+
+        #main:hover,
+        #register:hover,
+        #login:hover,
+        #admin:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pasek">
+        <a href="/" id="main">main</a>
+        <a href="/register" id="register">register</a>
+        <a href="/login" id="login">login</a>
+        <a href="/admin" id="admin">admin</a>
+    </div>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #pasek {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 60px;
+            width: 100%;
+            background-color: #333399;
+            display: block;
+        }
+
+        #main,
+        #register,
+        #login,
+        #admin {
+            width: 300px;
+            color: white;
+            display: inline;
+            justify-content: center;
+            font-size: 30px;
+            margin-top: 30px;
+            font: 30px;
+            padding: 10px 10px 10px 10px;
+            top: -15px;
+        }
+
+        #main:hover,
+        #register:hover,
+        #login:hover,
+        #admin:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .form-style-1 {
+            margin: 10px auto;
+            max-width: 400px;
+            padding: 20px 12px 10px 20px;
+            font: 13px;
+        }
+
+        .form-style-1 li {
+            padding: 0;
+            display: block;
+            list-style: none;
+            margin: 10px 0 0 0;
+        }
+
+        .form-style-1 label {
+            margin: 0 0 3px 0;
+            padding: 0px;
+            display: block;
+            font-weight: bold;
+        }
+
+        .form-style-1 input[type=login],
+        .form-style-1 input[type=password],
+        select {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            border: 1px solid #BEBEBE;
+            padding: 7px;
+            margin: 0px;
+            outline: none;
+        }
+
+        .form-style-1 .field-divided {
+            width: 49%;
+        }
+
+        .form-style-1 .field-long {
+            width: 100%;
+        }
+
+        .form-style-1 .field-select {
+            width: 100%;
+        }
+
+        .form-style-1 .field-textarea {
+            height: 100px;
+        }
+
+        .form-style-1 input[type=submit],
+        .form-style-1 input[type=button] {
+            background: #4B99AD;
+            padding: 8px 15px 8px 15px;
+            border: none;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pasek">
+        <a href="/" id="main">main</a>
+        <a href="/register" id="register">register</a>
+        <a href="/login" id="login">login</a>
+        <a href="/admin" id="admin">admin</a>
+    </div>
+    <form style="position: relative; top: 150px;" method="post" action="form_login">
+        <ul class="form-style-1">
+            <li><label>login</label>
+                <input type="login" name="username" class="field-long" />
+            <li>
+                <label>password</label>
+                <input type="password" name="passwd" class="field-long" />
+            </li>
+            <li>
+                <input type="submit" value="Submit" />
+            </li>
+        </ul>
+    </form>
+
+
+</html>
